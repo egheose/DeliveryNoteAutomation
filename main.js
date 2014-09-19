@@ -7,6 +7,8 @@ var webdriver = require('selenium-webdriver');
 var btn_id = 'ContentPlaceHolder1_btn_generate_delivery_note';
 //var assert = require('assert');
 
+console.log('DELIVERY_NOTE_OUTPUT:');
+
 var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.firefox()).build();
 driver.manage().timeouts().implicitlyWait(4000);
 driver.manage().window().maximize();
